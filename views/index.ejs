@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+h1 {
+  font-size:10px;
+  
+}
+.animate {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    font-size:60px;
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    font-size:10px;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    </style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Quinlan Advertising, adveritising for the third millenium.  We provide web development, graphic design, logo design, copywriting, videography, and photography.">
+        <meta name="author" content="Quinlan Advertising">
+	<title>Quinlan Advertising Texas Holdem</title>
+        
+        
+        <link rel="shortcut icon" href="logo_qa_ico.ico">
+	<!-- Owl Carousel -->
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond./js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Custom styles CSS -->
+	<link href="css/style.css" rel="stylesheet" media="screen">
+        
+
+
+</head>
+<body>
+    <% include js_files %> 
+    
+<% include navbar %>
+
+
+
+        
+        
+    <section class="section" id="texas-holdem-section">
+
+            
+            <div class="col-lg-12 text-center" style="height: 100px;">
+                <h2>Websocket Texas-Hold'em</h2>
+                <h3 id="player-name"></h3>
+                <form id="add-player-form">
+                    <label>Enter a name to join the game</label></br>
+                    <input id="player-name-to-add" type="text" class="form-control" style="max-width: 275px; margin:auto; width:95%;"></input></br>
+                    <input class="btn" id="add-player" type="submit" value="Join The Game">
+                </form>
+                <button class="btn" id="deal-hands">Deal Hands</button>
+                <button class="btn" id="next-table-cards"></button></br>
+                <button class="btn" id="new-hand">New Hand</button>
+                <h1 id="hand"></h1>
+                <h1 id="flop"></h1>
+                <h1 id="turn"></h1>
+                <h1 id="river"></h1>
+                <h3>Your Hand</h3>
+                <img class="pop-img-effect-2 card" id="card1" src="" onerror="this.style.display='none';">
+                <img class="pop-img-effect-2 card" id="card2" src="" onerror="this.style.display='none';">
+                <h3>Table</h3>
+                
+                <img class="pop-img-effect-2 card" id="table_card1" src="" onerror="this.style.display='none';">
+                <img class="pop-img-effect-2 card" id="table_card2" src="" onerror="this.style.display='none';">
+                <img class="pop-img-effect-2 card" id="table_card3" src="" onerror="this.style.display='none';">
+                <img class="pop-img-effect-2 card" id="table_card4" src="" onerror="this.style.display='none';">
+                <img class="pop-img-effect-2 card" id="table_card5" src="" onerror="this.style.display='none';">
+                <h3 id="winner"></h3>
+		<h4 id="winner-name"></h4>
+		<h4 id="winner-hand-name"></h4>
+                <img class="pop-img-effect-2 card" id="winner_card1" src="" onerror="this.style.display='none';">
+                <img class="pop-img-effect-2 card" id="winner_card2" src="" onerror="this.style.display='none';">
+                <p id="current-players"></p>
+                <p id="spectator-count"></p>
+            </div>
+      
+    </section>        
+        
+<% include footer %>
+
+          <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<!-- Bootstrap JS -->
+        <script src="/websockets/websockets.js"></script>  
+        
+
+
+
+</body>
+</html>

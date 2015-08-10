@@ -1,0 +1,379 @@
+/**
+ * Support: web-master72@yandex.ru;
+ * Author: web-master72
+ *
+ *
+/* ---------------------------------------------- /*
+ * General styles
+/* ---------------------------------------------- */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+body {
+	font: 400 15px/1.6 'Montserrat', serif, sans-serif;
+	color: #999;
+}
+
+.music-logo {
+	margin: auto;
+	height: 200px;
+}
+
+#intro_logo {
+	margin-top: -180px;
+}
+.mouse-hover {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #00D036;
+}
+
+.instr {
+	width: 160px;
+}
+
+a:hover {
+	color: #999;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font: 700 46px/1.2 'Montserrat', serif, sans-serif;
+	margin: 5px 0 5px;
+	color: #222;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 700;
+	margin: 5px 0 15px;
+}
+
+h2 {
+	font-size: 46px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 5px 0 10px;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 5px 0 10px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 13px;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+/* ---------------------------------------------- /*
+ * Inline icons
+/* ---------------------------------------------- */
+
+.line-icon-before {
+	margin-right: 6px;
+}
+
+.line-icon-after {
+	margin-right: 6px;
+}
+
+/* ---------------------------------------------- /*
+ * Icon-list and icon widget
+/* ---------------------------------------------- */
+
+.icons-widget {
+	padding: 0;
+	margin: 0;
+}
+
+.icons-widget li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.icons-widget li a {
+	background: #222;
+	text-align: center;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.25em;
+	color: #FFF;
+}
+
+.icons-widget li a:hover {
+	background: #00D036;
+}
+
+.icons-widget-sm li a{
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: .8em;
+}
+
+.icons-widget-sm li {
+	margin-right: 3px;
+}
+
+.icons-widget li:last-child {
+	margin-right: 0;
+}
+
+.iconList li {
+	padding: 5px 0;
+}
+
+.iconList li:before {
+	content: "\f054";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 10px;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	margin-right: 10px;
+	line-height: 1em;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * General
+/* ---------------------------------------------- */
+
+
+
+.section {
+	position: relative;
+	padding: 120px 0;
+}
+
+
+
+.section-header {
+	text-align: center;
+}
+
+.section-header,
+.section-header h1,
+.section-header h2,
+.section-header h3,
+.section-header h4,
+.section-header h5,
+.section-header h6 {
+	color: #FFF;
+}
+
+/* ---------------------------------------------- /*
+ * Intro
+/* ---------------------------------------------- */
+
+#intro {
+	background: rgba(34, 34, 34, .2) !important;
+	z-index: auto !important;
+	padding: 260px 0 160px 0;
+	text-align: center;
+}
+
+/* ---------------------------------------------- /*
+ * About
+/* ---------------------------------------------- */
+
+#about-header {
+	background: url(../../bg3.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+			background-size: cover;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * Team
+/* ---------------------------------------------- */
+
+#team-header {
+	background: url(../../bg2.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+			background-size: cover;
+}
+
+.member {
+	text-align: center;
+}
+
+.member-data {
+	padding: 15px 0 10px 0;
+}
+
+.member-data h3 {
+	margin: 5px 0 0px;
+}
+
+.member-data span {
+	font-size: 12px;
+}
+
+/* ---------------------------------------------- /*
+ * Contact
+/* ---------------------------------------------- */
+
+#contact-header {
+	background: url(../../bg3.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+			background-size: cover;
+}
+
+#contact-data {
+	background: #ebeff0;
+	text-align: center;
+}
+
+#map {
+	height: 450px;
+	width: 100%;
+}
+
+#footer {
+	background: #242424;
+	padding: 20px 0;
+	color: #FFF;
+}
+
+#footer p {
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+
+
+@-webkit-keyframes drop	{
+	0%   { top:5px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+	0%   { top:5px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+	background: #FFF;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+#status, .status-mes {
+	background-image: url(../images/logo.png);
+	background-size: 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	position: absolute;
+	top: 50%;
+	width: 250px;
+}
+
+.status-mes {
+	background: none;
+	left: 0;
+	margin: 0;
+	text-align: center;
+	top: 65%;
+}
+
+.status-mes h4 {
+	color: #222;
+	margin-top: 30px;
+}
+
+		.team-photo {
+		width: 250px;
+	}
+	#texas-holdem-section {
+		height: 130%;
+	}
+/* ---------------------------------------------- /*
+ * Media
+/* ---------------------------------------------- */
+
+@media (max-width: 992px) {
+	#texas-holdem-section {
+		height: 900px;
+	}
+	.card {
+		width: 16%;
+		max-width: 100px;
+	}
+	
+
+	.knob, .member {
+		margin-bottom: 30px;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+	#texas-holdem-section {
+		height: 900px;
+	}
+	.team-photo {
+		width: 150px;
+	}
+	.scroll-up {
+		display: none !important;
+	}
+	
+		.card {
+		width: 16%;
+	}
+
+}
+
+	.card {
+		width: 16%;
+		max-width: 75px;
+	}
+	
+
+
